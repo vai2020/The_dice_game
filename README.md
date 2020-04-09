@@ -10,7 +10,7 @@ Dice-game
 8) Will have a pseudocode file to showcase references and credits from outside sources relating to the game
 9) Will have a score card for the game
 
-I plan to start on April 8th and finish the game on or before April 16th.
+I plan to start on April 8th and finish the game on or before April 17th.
 
 Game rules: Each dice has numbers from 1 to 6. When Computer's randomly generated number is higher than User's, 
 then Computer wins. If User's randomly generated number is higher than Computer's, then User wins. 
