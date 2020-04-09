@@ -5,9 +5,10 @@ Dice-game
 3) A win state
 4) A lose state
 5) The game can continue
-6) Codes will be written in JS with HTML and CSS using the DOM
+6) Codes will be written in JS and JQuery with HTML and CSS using the DOM
 7) Multiple commits spread out on different days
 8) Will have a pseudocode file to showcase references and credits from outside sources relating to the game
+9) Will have a score card for the game
 
 I plan to start on April 8th and finish the game on or before April 16th.
 
