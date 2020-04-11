@@ -6,6 +6,12 @@
     text-align: center;
 }
 
+h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 38px;
+}
+
 h2 {
     color: red;
     background-color:yellow;
@@ -21,5 +27,11 @@ h2 {
     color: brown;
     font-size: 28px;
     font-weight: bold;
+}
+
+.Scorebtn {
+    color: darkviolet;
+    font-weight: bold;
+    font-size: 22px;
 }
 
