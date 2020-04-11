@@ -6,6 +6,7 @@ Inspirations came from the following sites and videos:
 
 Other related references:
 https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps
+https://www.keycdn.com/blog/javascript-performance
 
 
 
