@@ -2,6 +2,11 @@
     background-color: lightskyblue;
 } */
 
+.parent_container{
+    text-align: center;
+}
+
+
 #Startbtn {
     background-color: "red";
 }
