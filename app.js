@@ -2,4 +2,4 @@
  */
 
 let randomDice = Math.floor(Math.random() * 6);
-    console.log(randomDice);
+    
