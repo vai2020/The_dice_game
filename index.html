@@ -12,15 +12,35 @@
     <body>
         <h1> Welcome To The Exciting Game of Dice </h1>
        <div> <p> Computer</p> 
-        <img src="./Dice1.png"
+        <!-- <img src="./Dice1.png" -->
+        <p id=ans1> randomDice1 </p>
+
+
         <di><p> Computer Score: </p>
       </div>
        <div> <p> Player </p> 
-        <img src="./Dice1.png"
+        <!-- <img src="./Dice1.png" -->
+        <p id=ans2> randomDice1 </p>
         <div> <p> Player Score: </p>
         </div>
-        <div> <h3> Restart Game </h3></div>
+        <button onclick="randomDice()"> Restart Game</button>
+        <p id="demo"></p>
+        <script>
 
+        function randomDice() {
+        let randomDice = Math.floor(Math.random() * 6) + 1;
+        document.getElementById("ans1").innerHTML = randomDice;
+        
+        // function randomDice2() {
+        let randomDice2 = Math.floor(Math.random() * 6) + 1;
+        document.getElementById("ans2").innerHTML = randomDice2;
+        // }
+        // randomDice2();
+        }
+        
+        if(randomDice)
+
+        </script>
         <script>
             $(document).ready(function() {
                   $("body").css("background","lightskyblue");
