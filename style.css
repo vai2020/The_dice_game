@@ -24,7 +24,7 @@ button {
     border: 3px;
     border-style: solid;
     border-color: black;
-    border-radius: 20px;
+    border-radius: 18px;
 }
 
 #Compbtn {
@@ -43,5 +43,9 @@ button {
     color: darkviolet;
     font-weight: bold;
     font-size: 22px;
+}
+
+#ans1, #ans2 {
+    font-size: 30px;
 }
 
