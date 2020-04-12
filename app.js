@@ -21,12 +21,12 @@
 
 // console.log(randomDice);
 
+let computerScore = 0;
+let playerScore = 0;
 
-if(ans1>ans2) a[
-    return "Computer Wins";
-] else if (ans<ans2) {
-    return "Player Wins";
-} else { 
-    return "Tie Gzme";
+if(ans1>ans2) {
+    let computerScore = computerScore + 1;
+} else if(ans1<ans2) {
+    let playerScore = playerScore = 1;
 }
     

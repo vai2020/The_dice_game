@@ -13,13 +13,11 @@
         <section class="parent_container">
         <h1> Welcome To The Exciting Game of Dice </h1>
        <div> <p id="Compbtn"> Computer</p> 
-        
         <p id=ans1> randomDice1 </p>
         <di><p id="CScorebtn"> Computer Score: </p>
         </div>
        
         <div> <p id="Playerbtn"> Player </p> 
-        
         <p id=ans2> randomDice2 </p>
         <div> <p id="PScorebtn"> Player Score: </p>
         </div>
@@ -30,24 +28,28 @@
 
         function randomDice() {
         let randomDice = Math.floor(Math.random() * 6) + 1;
-        document.getElementById("ans1").innerHTML = randomDice;
+        document.getElementById("ans1").innerHTML = randomDice; //using the getElementById Method and innerHTML Property to access the randomly generated numbers for the computer produced by function randomDice.  Value stored in variable randomDice.
         
-        // function randomDice2() {
         let randomDice2 = Math.floor(Math.random() * 6) + 1;
         document.getElementById("ans2").innerHTML = randomDice2;
+        ////using the getElementById Method and innerHTML Property to access the randomly generated numbers for the player produced by function randomDice. Value stored in variable randomDice2.
+        
+        // function gameScore() {
+        //     if(ans1>ans2) {
+        //     let computerScore = 0;
+        //     return computerScore = computerScore + 1; 
+        //     alert("Computer wins") ;
         // }
-        
-        // function computerScore () {
-        // let conmputerScore = 0;
-        // document.getElementById()
-        // };
-        
-        
-        
-        // randomDice2();
+        //     else if(ans1<ans2) {
+        //     let playerScore = 0;
+        //     return playerScore = playerScore + 1;
+        //     alert("Player wins");
+        // }  else {
+        //     alert("Tie game");
+        // }
         }
-        
-        // if(randomDice)
+       
+       
 
         </script>
         <script>
