@@ -39,7 +39,7 @@ button {
     font-weight: bold;
 }
 
-.Scorebtn {
+#CScorebtn, #PScorebtn {
     color: darkviolet;
     font-weight: bold;
     font-size: 22px;
