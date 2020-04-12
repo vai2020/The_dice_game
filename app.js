@@ -21,12 +21,5 @@
 
 // console.log(randomDice);
 
-let computerScore = 0;
-let playerScore = 0;
 
-if(ans1>ans2) {
-    let computerScore = computerScore + 1;
-} else if(ans1<ans2) {
-    let playerScore = playerScore = 1;
-}
     

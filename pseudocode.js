@@ -6,8 +6,10 @@ https://www.bing.com/videos/search?q=how+to+write+an+easy+js+game&docid=60799048
 
 
 Other related references:
+https://www.w3schools.com/js/js_htmldom.asp
 https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps
 https://www.keycdn.com/blog/javascript-performance
+https://www.w3schools.com/jquery/jquery_callback.asp
 
 
 
