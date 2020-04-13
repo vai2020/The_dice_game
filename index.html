@@ -12,13 +12,15 @@
     <body>
         <section class="parent_container">
         <h1> Welcome To The Exciting Game of Dice </h1>
-       <div> <p id="Compbtn"> Computer</p> 
+       <div> <p id="Compbtn"> Computer</p>
+        <img src="./images"> 
         <p id=ans1> randomDice1 </p>
         <di><p id="CScorebtn"> Computer Score: </p>
         </div>
        
         <div> <p id="Playerbtn"> Player </p> 
         <p id=ans2> randomDice2 </p>
+        <img class="imgages" src="./images">
         <div> <p id="PScorebtn"> Player Score: </p>
         </div>
 
@@ -30,56 +32,39 @@
 
         function randomDice() {
         let randomDice = Math.floor(Math.random() * 6) + 1;
-        document.getElementById("ans1").innerHTML = randomDice; //using the getElementById Method and innerHTML Property to access the randomly generated numbers for the computer produced by function randomDice.  Value stored in variable randomDice.
+        document.getElementById("ans1").innerHTML = randomDice; //using the getElementById Method and innerHTML Property to access the randomly generated numbers for the computer produced by function randomDice.  Value stored in variable randomDice. //
+        // document.querySelector(".img").attribute("src", randomDice);
+         
         
+        
+        
+
+
+
         let randomDice2 = Math.floor(Math.random() * 6) + 1;
         document.getElementById("ans2").innerHTML = randomDice2;
         
         // using the getElementById Method and innerHTML Property to access the randomly generated numbers for the player produced by function randomDice. Value stored in variable randomDice2.
         
-        // if($("#randomDice" > "#randomDice2").text) {  //this set of codes not not working
-        //     alert("Computer Win");
-        // } else if($("#randomDice" < "#randomDice2").text) {
-        //     alert("Player Win");
-        // } else {
-        //     alert("Tie Game.  Roll the dice again!!")
-        // }
        
-        if(randomDice > randomDice2) {          //this set of codes is working//
-            confirm("Computer Win");
-        } else if(randomDice < randomDice2) {
-            confirm("Player Win");
-        } else {
-            confirm("Tie Game.  Roll the dice again!!")
-        }
-        
-
-
-
-        /*Experiment with jQuery codes below.  Codes not working
-
-        //reminder of basic jQuery syntax: $(selector).action()
-        //     $(document).ready(function() {
-        //     // $("#Start").click(function() {
-
-        //    let randomDice = Math.floor(Math.random() * 6) + 1;
-        //    $("Compbtn").text(randomDice)
-
-
-        //    let randomDice2 = Math.floor(Math.random() * 6) + 1; 
-        //    $("#Playerbtn").text(randomDice2)
-        //    $(document).ready(function() {
-        //    if($(randomDice > randomDice2)){
-        //    $("#winner").text("Computer Wins")
-           
-        //    else if($(randomDice < randomDice2))
-        //    $("#winner").text("Player Wins")
-           
-        //    else
-        //    $("#winner").text("Tie Game.  Roll the dice Again")
-        //    }); */
+        // if(randomDice > randomDice2) {          //this set of codes is working//
+        //     confirm("Computer Win");
+        // } else if(randomDice < randomDice2) {
+        //     confirm("Player Win");
+        // } else {
+        //     confirm("Tie Game. Roll the dice again!!")
+        // }
                 
-        
+        if(randomDice > randomDice2) {          //this set of codes is working//
+            prompt("Computer Win. Do you want to play another game?");
+        }   else if(randomDice < randomDice2) {
+            prompt("Player Win. Do you want to play another game?");
+        }   else {
+            prompt("Tie Game. Roll the dice again!!")
+        }
+
+
+
         }
 
         </script>
@@ -91,6 +76,6 @@
         </section>
         <!-- <script src="jquery-3.4.1.min.js"></script>   -->
         <!--library-->
-        <script src="async"></script>
+        <script src="defer"></script>
     </body>
     </html>
