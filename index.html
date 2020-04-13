@@ -13,18 +13,18 @@
         <section class="parent_container">
         <h1> Welcome To The Exciting Game of Dice </h1>
        <div> <p id="Compbtn"> Computer</p>
-        <img src="./images"> 
+        <!-- <img src="./images">  -->
         <p id=ans1> randomDice1 </p>
-        <di><p id="CScorebtn"> Computer Score: </p>
+        <p id="CScorebtn"> Computer Score: <span id="compScore">0</span></p>
         </div>
        
         <div> <p id="Playerbtn"> Player </p> 
         <p id=ans2> randomDice2 </p>
-        <img class="imgages" src="./images">
-        <div> <p id="PScorebtn"> Player Score: </p>
+        <!-- <img class="imgages" src="./images"> -->
+        <div> <p id="PScorebtn"> Player Score: <span id="playerScore">0</span></p>
         </div>
 
-        <div> <p id="winner"> Winner </p></div>
+        <!-- <div> <p id="winner"> Winner </p></div> -->
         
         <button id="Start" type="button" onclick="randomDice()"><h2>Start Game</h2> </button>
         
@@ -35,33 +35,34 @@
         document.getElementById("ans1").innerHTML = randomDice; //using the getElementById Method and innerHTML Property to access the randomly generated numbers for the computer produced by function randomDice.  Value stored in variable randomDice. //
         // document.querySelector(".img").attribute("src", randomDice);
          
-        
-        
-        
-
-
-
         let randomDice2 = Math.floor(Math.random() * 6) + 1;
         document.getElementById("ans2").innerHTML = randomDice2;
         
         // using the getElementById Method and innerHTML Property to access the randomly generated numbers for the player produced by function randomDice. Value stored in variable randomDice2.
         
-       
-        // if(randomDice > randomDice2) {          //this set of codes is working//
-        //     confirm("Computer Win");
-        // } else if(randomDice < randomDice2) {
-        //     confirm("Player Win");
-        // } else {
-        //     confirm("Tie Game. Roll the dice again!!")
-        // }
-                
-        if(randomDice > randomDice2) {          //this set of codes is working//
-            prompt("Computer Win. Do you want to play another game?");
-        }   else if(randomDice < randomDice2) {
-            prompt("Player Win. Do you want to play another game?");
-        }   else {
-            prompt("Tie Game. Roll the dice again!!")
+        function gameScore() {
+        if(randomDice > randomDice2) {
+        let compScore = compScore + 1;
+        document.getElementById("compScore").innerHTML = gameScore;
         }
+        else if(randomDice < randomDice2) {
+        let playerScore = playerScore + 1;
+        document.getElementById("playerScore").innerHTML = gameScore;
+        }
+        }
+        
+
+
+
+
+                
+        // if(randomDice > randomDice2) {          //this set of codes is working//
+        //     prompt("Computer Win. Do you want to play another game?");
+        // }   else if(randomDice < randomDice2) {
+        //     prompt("Player Win. Do you want to play another game?");
+        // }   else {
+        //     prompt("Tie Game. Roll the dice again!!")
+        // }
 
 
 
