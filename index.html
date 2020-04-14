@@ -15,20 +15,23 @@
        <div> <p id="Compbtn"> Computer</p>
         <!-- <img src="./images">  -->
         <p id=ans1> randomDice1 </p>
-        <p id="CScorebtn"> Computer Score: <span id="compScore">0</span></p>
+        <!-- <p id="CScorebtn"> Computer Score: <span id="compScore">0</span></p> -->
         </div>
         <hr color="black" size="3">
         <div> <p id="Playerbtn"> Player </p> 
         <p id=ans2> randomDice2 </p>
         <!-- <img class="imgages" src="./images"> -->
-        <div> <p id="PScorebtn"> Player Score: <span id="playerScore">0</span></p>
+        <!-- <div> <p id="PScorebtn"> Player Score: <span id="playerScore">0</span></p> -->
         </div>
-
+        <div id="final"></div>
         <div> <p id="winner"> <h3>Final Result: </h3> </p></div>
         
         <button id="Start" type="button" onclick="randomDice()"><h2>Start Game</h2> </button>
         
         <script>
+        
+        let computer = 0;
+        let player = 0;
 
         function randomDice() {
         let randomDice = Math.floor(Math.random() * 6) + 1;

@@ -10,8 +10,9 @@ https://www.w3schools.com/js/js_htmldom.asp
 https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps
 https://www.keycdn.com/blog/javascript-performance
 https://www.w3schools.com/jquery/jquery_callback.asp
-
-
+https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_html_text_set //jquery .text or text()method
+https://teamtreehouse.com/community/why-do-we-put-the-jquery-script-in-the-beginning-of-the-html-instead-of-at-the-end-near-the-body
+https://forums.asp.net/t/2106876.aspx?jquery+works+when+put+just+before+body+tag+but+does+not+work+in+head+head+section+  //the posiition of jquery affecting performance
 
 
 
