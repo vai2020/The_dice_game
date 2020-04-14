@@ -14,9 +14,16 @@
             let computer = 0
             let player = 0
         
+            $("#start").click(function() {
+            let randomDice = Math.floor(Math.random() * 6) + 1;
+            // document.getElementById("ans1").innerHTML = randomDice; //replace this JS code with JQuery code below//
+            $("#computer").text(randomDice)
+            let randomDice2 = Math.floor(Math.random() * 6) + 1;
+            $("#player").text(randomDice2)
+            });
         
 
-        }
+        });
 
 
 
@@ -24,23 +31,24 @@
     </script>    
     </head>
     <body>
-        <section class="parent_container">
+        <div class="parent_container">
         <h1> Welcome To The Exciting Game of Dice </h1>
-       <div> <p id="Compbtn"> Computer</p>
-        <!-- <img src="./images">  -->
-        <p id=ans1> randomDice1 </p>
-        <!-- <p id="CScorebtn"> Computer Score: <span id="compScore">0</span></p> -->
-        </div>
+        <p id="Computer"> Computer</p>
+    
+        <!-- <p id="CScorebtn"> Computer Score: <span id="compScore">0</span></p>  -->
+        
         <hr color="black" size="3">
-        <div> <p id="Playerbtn"> Player </p> 
-        <p id=ans2> randomDice2 </p>
-        <!-- <img class="imgages" src="./images"> -->
+        <p id="Player"> Player </p> 
+
+      
         <!-- <div> <p id="PScorebtn"> Player Score: <span id="playerScore">0</span></p> -->
-        </div>
+        
         <div id="final"></div>
         <div> <p id="winner"> <h3>Final Result: </h3> </p></div>
         
-        <button id="Start" type="button" onclick="randomDice()"><h2>Start Game</h2> </button>
-        </section>
+        <button id="Start" type="button"><h2>Start Game</h2> </button>
+        </div>
         
+        <script src="async"></script>
         </body>
+        </html>

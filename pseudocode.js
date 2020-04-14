@@ -14,6 +14,9 @@ https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_html_text_set //jq
 https://teamtreehouse.com/community/why-do-we-put-the-jquery-script-in-the-beginning-of-the-html-instead-of-at-the-end-near-the-body
 https://forums.asp.net/t/2106876.aspx?jquery+works+when+put+just+before+body+tag+but+does+not+work+in+head+head+section+  //the posiition of jquery affecting performance
 jQuery text() method: https://www.w3schools.com/jquery/jquery_dom_get.asp
+jQuery selector: https://www.w3schools.com/jquery/jquery_selectors.asp
+jQuery .click() method: https://www.w3schools.com/jquery/event_click.asp
+
 
 
 
