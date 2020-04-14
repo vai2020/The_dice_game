@@ -17,14 +17,14 @@
         <p id=ans1> randomDice1 </p>
         <p id="CScorebtn"> Computer Score: <span id="compScore">0</span></p>
         </div>
-       
+        <hr color="black" size="3">
         <div> <p id="Playerbtn"> Player </p> 
         <p id=ans2> randomDice2 </p>
         <!-- <img class="imgages" src="./images"> -->
         <div> <p id="PScorebtn"> Player Score: <span id="playerScore">0</span></p>
         </div>
 
-        <!-- <div> <p id="winner"> Winner </p></div> -->
+        <div> <p id="winner"> <h3>Final Result: </h3> </p></div>
         
         <button id="Start" type="button" onclick="randomDice()"><h2>Start Game</h2> </button>
         
@@ -42,12 +42,12 @@
         
         function gameScore() {
         if(randomDice > randomDice2) {
-        let compScore = compScore + 1;
-        document.getElementById("compScore").innerHTML = gameScore;
+        let winner = winner + 1;
+        document.getElementById("compScore").innerHTML = winner;
         }
         else if(randomDice < randomDice2) {
-        let playerScore = playerScore + 1;
-        document.getElementById("playerScore").innerHTML = gameScore;
+        let winner2 = winner2 + 1;
+        document.getElementById("playerScore").innerHTML = winner2;
         }
         }
         
