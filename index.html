@@ -17,10 +17,19 @@
               let randomDice = Math.floor(Math.random() * 6) + 1;
               $("#Player").text(randomDice)
               let randomDice2 = Math.floor(Math.random() * 6) + 1;
-              $("#Computer").text(randomDice2)
+              $("#Computer").text(randomDice2)}
               
-              
-            }
+              if(randomDice>randomDice2){
+              $("#Winner").text("Player win");
+
+             else if(randomDice<randomDice2) {
+             $("#Winner").text("Computer win");
+             computer=computer+1;
+             }
+             else
+             ("#Winner").text("Tie game");
+     
+            
         
 
         
