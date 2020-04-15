@@ -10,45 +10,63 @@
         <script src = "http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     
     <script>
-        $(document).ready(function() {
+        $(document).ready(function(){
             let computer = 0
             let player = 0
+            $("#Start").click(function(){
+              let randomDice = Math.floor(Math.random() * 6) + 1;
+              $("#Player").text(randomDice)
+              let randomDice2 = Math.floor(Math.random() * 6) + 1;
+              $("#Computer").text(randomDice2)
+              if(randomDice>randomDice2){
+                $("#Winner").text("Player win");
+                player=player+1;
+              
+            }
+         else if(randomDice<randomDice2) {
+              $("#Winner").text("Computer win");
+              computer=computer+1;
+            }
+            else
+              ("#Winner").text("Tie game");
+            
+            if(player>computer)
+              $("#Final").text("Player score: " + player + " vs " + "Computer score: " + computer);
+            else if(player<computer)
+              $("#Final").text("Player score: " + player + " vs " + "Computer score: " + computer);
+            else
+              $("#Final").text("Tie game. Roll the dice again" + "Player win" + player + "Computer win" + computer);
+          });
+          });
+
         
-            $("#start").click(function() {
-            let randomDice = Math.floor(Math.random() * 6) + 1;
-            // document.getElementById("ans1").innerHTML = randomDice; //replace this JS code with JQuery code below//
-            $("#computer").text(randomDice)
-            let randomDice2 = Math.floor(Math.random() * 6) + 1;
-            $("#player").text(randomDice2)
-            });
-        
-
-        });
-
-
 
 
     </script>    
     </head>
     <body>
+        
+
         <div class="parent_container">
         <h1> Welcome To The Exciting Game of Dice </h1>
-        <p id="Computer"> Computer</p>
+        <h4>COMPUTER</h4>
+        <p id="Computer"> Computer Score</p> 
     
-        <!-- <p id="CScorebtn"> Computer Score: <span id="compScore">0</span></p>  -->
+       
         
         <hr color="black" size="3">
-        <p id="Player"> Player </p> 
+        <h4>PLAYER</h4>
+        <p id="Player"> Player Score</p>  
 
       
-        <!-- <div> <p id="PScorebtn"> Player Score: <span id="playerScore">0</span></p> -->
+       
         
-        <div id="final"></div>
-        <div> <p id="winner"> <h3>Final Result: </h3> </p></div>
+        <div id="Final"></div>
+        <p id="Winner"> <h3>Final Result: </h3> </p>
         
         <button id="Start" type="button"><h2>Start Game</h2> </button>
         </div>
-        
+         
         <script src="async"></script>
         </body>
         </html>

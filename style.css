@@ -27,17 +27,12 @@ button {
     border-radius: 18px;
 }
 
-#Compbtn {
+h4 {
     color: brown;
     font-size: 28px;
     font-weight: bold;
 }
 
-#Playerbtn {
-    color: brown;
-    font-size: 28px;
-    font-weight: bold;
-}
 
 #CScorebtn, #PScorebtn {
     color: darkviolet;
